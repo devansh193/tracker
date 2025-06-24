@@ -74,10 +74,7 @@ export const FeaturesSection = () => {
             Join thousands of developers who&apos;ve already made the switch to
             Analytics.
           </p>
-          <Button
-            size="lg"
-            className="font-geist gap-2 border border-[#148253] bg-[#00623A] text-white transition-colors hover:cursor-pointer hover:bg-[#2C7051] sm:w-auto"
-          >
+          <Button size="lg" className="text-white" variant={"custom"}>
             <h1 className="font-geist font-medium">Start Tracking Now</h1>
           </Button>
         </div>

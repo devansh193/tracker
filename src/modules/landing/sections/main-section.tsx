@@ -6,16 +6,7 @@ import { OnlineIndication } from "../ui/online-indicator";
 export const MainSection = () => {
   return (
     <section className="relative overflow-hidden py-30 md:py-24 lg:py-40">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-gray-900 via-black to-black" />
-      <div
-        className="absolute inset-0 -z-10"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)",
-          backgroundSize: "20px 20px",
-          opacity: 0.1,
-        }}
-      />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#151517] via-[black] to-black" />
       <div
         className="absolute -z-10"
         style={{
@@ -25,31 +16,34 @@ export const MainSection = () => {
           width: "500px",
           height: "500px",
           borderRadius: "50%",
-          backgroundColor: "rgba(23, 196, 93, 0.2)",
+          backgroundColor: "rgba(100, 116, 139, 0.2)",
           filter: "blur(100px)",
         }}
       />
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="animate-fade-in mx-auto max-w-4xl space-y-6 text-center sm:space-y-8">
+
+      <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="animate-fade-in mx-auto max-w-4xl space-y-4 text-center">
           <div className="font-geist mb-2 inline-flex items-center gap-2 rounded-full border border-[#1F1F1F] px-4 py-2 text-xs font-medium text-white sm:px-6 sm:py-3 sm:text-sm">
             <OnlineIndication />
             <span>Real-time monitoring for modern website</span>
           </div>
-          <h1 className="px-2 text-3xl font-bold tracking-tight text-white sm:px-0 sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="px-2 text-3xl font-medium tracking-tight text-neutral-200 sm:px-0 sm:text-4xl md:text-5xl lg:text-6xl">
             Monitor Your Website&apos;s
             <br />
-            <span className="bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">
-              Performance & Analytics
-            </span>{" "}
+            <span className="">Performance & Analytics</span>{" "}
           </h1>
-
-          <p className="mx-auto max-w-2xl px-4 text-base text-gray-400 sm:px-0 sm:text-lg md:text-xl">
-            Get real-time insights, instant alerts, and actionable analytics to
-            optimize your website&apos;s performance and user experience.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-3 pt-4 sm:flex-row sm:gap-4">
+          <div className="mx-auto max-w-2xl px-4 text-center">
+            <p className="text-gray-400 text-sm">
+              Unlock real-time insights, receive instant alerts, and leverage
+              actionable analytics to keep your online presence robust.
+            </p>
+            <h2 className="mt-4 text-lg font-instrument-serif text-gray-300 md:text-3xl">
+              Because every millisecond matters.
+            </h2>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href={"/dashboard"}>
-              <Button size="lg" variant={"custom"}>
+              <Button className="w-50 text-gray-200" variant={"custom"}>
                 Start Tracking <ArrowRight size={16} />
               </Button>
             </Link>
